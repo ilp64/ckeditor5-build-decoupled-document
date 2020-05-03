@@ -22,6 +22,7 @@ import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
+import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
@@ -38,6 +39,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Preview from '../plugin/preview';
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
@@ -59,6 +61,7 @@ DecoupledEditor.builtinPlugins = [
 	CKFinder,
 	EasyImage,
 	Heading,
+	HorizontalLine,
 	Image,
 	ImageCaption,
 	ImageStyle,
@@ -72,6 +75,7 @@ DecoupledEditor.builtinPlugins = [
 	MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
+	Preview,
 	Table,
 	TableToolbar,
 	TextTransformation
@@ -83,7 +87,7 @@ DecoupledEditor.defaultConfig = {
 		items: [
 			'heading',
 			'|',
-			'fontfamily',
+			// 'fontfamily',
 			'fontsize',
 			'fontColor',
 			'fontBackgroundColor',
@@ -105,25 +109,28 @@ DecoupledEditor.defaultConfig = {
 			'blockquote',
 			'imageUpload',
 			'insertTable',
-			'mediaEmbed',
+			'horizontalLine',
+			// 'mediaEmbed',
 			'|',
 			'undo',
-			'redo'
+			'redo',
+			'|',
+			'preview'
 		]
 	},
 	image: {
-		styles: [
-			'full',
-			'alignLeft',
-			'alignRight'
-		],
-		toolbar: [
-			'imageStyle:alignLeft',
-			'imageStyle:full',
-			'imageStyle:alignRight',
-			'|',
-			'imageTextAlternative'
-		]
+		// styles: [
+		// 	'full',
+		// 	'alignLeft',
+		// 	'alignRight'
+		// ],
+		// toolbar: [
+		// 	'imageStyle:alignLeft',
+		// 	'imageStyle:full',
+		// 	'imageStyle:alignRight',
+		// 	'|',
+		// 	'imageTextAlternative'
+		// ]
 	},
 	table: {
 		contentToolbar: [
