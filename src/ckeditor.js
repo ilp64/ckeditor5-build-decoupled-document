@@ -40,6 +40,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import Preview from '../plugin/preview';
+import Video from '../plugin/video';
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
@@ -78,7 +79,8 @@ DecoupledEditor.builtinPlugins = [
 	Preview,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	Video
 ];
 
 // Editor configuration.
@@ -108,6 +110,7 @@ DecoupledEditor.defaultConfig = {
 			'link',
 			'blockquote',
 			'imageUpload',
+			'insertVideo',
 			'insertTable',
 			'horizontalLine',
 			// 'mediaEmbed',
