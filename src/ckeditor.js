@@ -33,14 +33,14 @@ import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
+// import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
-import Preview from '../plugin/preview';
-import Video from '../plugin/video';
+import Preview from '../plugin/preview/preview';
+import Video from '../plugin/video/video';
 
 export default class DecoupledEditor extends DecoupledEditorBase {}
 
@@ -73,7 +73,7 @@ DecoupledEditor.builtinPlugins = [
 	IndentBlock,
 	Link,
 	List,
-	MediaEmbed,
+	// MediaEmbed,
 	Paragraph,
 	PasteFromOffice,
 	Preview,

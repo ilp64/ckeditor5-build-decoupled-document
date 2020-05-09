@@ -401,6 +401,11 @@
     "@ckeditor/ckeditor5-core" "^19.0.0"
     "@ckeditor/ckeditor5-utils" "^19.0.0"
 
+"@ckeditor/ckeditor5-inspector@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-inspector/download/@ckeditor/ckeditor5-inspector-2.0.0.tgz#378ef4ca5dbdf652b04b50ca9455b3f5b00aa899"
+  integrity sha1-N470yl299lKwS1DKlFWz9bAKqJk=
+
 "@ckeditor/ckeditor5-link@^19.0.0":
   version "19.0.0"
   resolved "https://registry.npmjs.org/@ckeditor/ckeditor5-link/-/ckeditor5-link-19.0.0.tgz#728798ec8a595484f736132ece64dcde064182a5"
@@ -526,8 +531,8 @@
 
 "@ckeditor/ckeditor5-widget@^19.0.0":
   version "19.0.0"
-  resolved "https://registry.npmjs.org/@ckeditor/ckeditor5-widget/-/ckeditor5-widget-19.0.0.tgz#477638c194d6ddfa4fd43c6b0add4bbbc04e5ede"
-  integrity sha512-PHr+Xyxby3p8Kxt36npkfyguvcIJT7T6QrpixSmGggwv7/0JElfiAWWNY35oTYsonUGlEyINc0yNf4HqLdydgg==
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-widget/download/@ckeditor/ckeditor5-widget-19.0.0.tgz#477638c194d6ddfa4fd43c6b0add4bbbc04e5ede"
+  integrity sha1-R3Y4wZTW3fpP1DxrCt1Lu8BOXt4=
   dependencies:
     "@ckeditor/ckeditor5-core" "^19.0.0"
     "@ckeditor/ckeditor5-engine" "^19.0.0"
