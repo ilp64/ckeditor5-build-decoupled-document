@@ -41,8 +41,11 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import Preview from '../plugin/preview/preview';
 import Video from '../plugin/video/video';
+import ArticleSection from '../plugin/article-section/article-section';
+import ArticleTitle from '../plugin/article-title/article-title';
 
-export default class DecoupledEditor extends DecoupledEditorBase {}
+export default class DecoupledEditor extends DecoupledEditorBase {
+}
 
 // Plugins to include in the build.
 DecoupledEditor.builtinPlugins = [
@@ -80,13 +83,18 @@ DecoupledEditor.builtinPlugins = [
 	Table,
 	TableToolbar,
 	TextTransformation,
-	Video
+	Video,
+	ArticleSection,
+	ArticleTitle
 ];
 
 // Editor configuration.
 DecoupledEditor.defaultConfig = {
 	toolbar: {
 		items: [
+			'articleTitle',
+			'articleSection',
+			'|',
 			'heading',
 			'|',
 			// 'fontfamily',
