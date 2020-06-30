@@ -8,7 +8,7 @@ class PreviewCommand extends Command {
 		// eslint-disable-next-line no-undef
 		if ( typeof window.onCkeditorPreview === 'function' ) {
 			// eslint-disable-next-line no-undef
-			window.onCkeditorPreview();
+			window.onCkeditorPreview( this.editor );
 		}
 	}
 
