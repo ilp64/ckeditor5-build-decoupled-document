@@ -9,6 +9,7 @@
 	text-align: center;
 	position: relative;
 	min-width: 20px;
+	color: var(--ckeditor-article-section-theme);
 }
 .article-section-no::after {
 	position: absolute;
@@ -18,10 +19,12 @@
 	margin-left: -10px;
 	bottom: 0;
 	height: 2px;
+	background-color: var(--ckeditor-article-section-theme);
 }
 .article-section-title {
 	font-size: 18px;
 	font-weight: 500;
 	/*margin-bottom: 20px;*/
 	text-align: center;
+	color: var(--ckeditor-article-section-theme);
 }
